@@ -1,7 +1,5 @@
 # Model Card for CodeFuse-CodeLlama-34B
-<p align="left">
-  <img src="./LOGO.png" width="100%" />
-</p>
+![Creation Approach](LOGO.png)
 
 [[中文]](#chinese)    [[English]](#english)
 
