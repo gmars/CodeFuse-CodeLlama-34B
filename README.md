@@ -1,3 +1,6 @@
+---
+license: other
+---
 # Model Card for CodeFuse-CodeLlama-34B
 ![Creation Approach](LOGO.png)
 
@@ -190,5 +193,3 @@ outputs = model.generate(
 gen_text = tokenizer.batch_decode(outputs[:, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
 print(gen_text)
 ```
-
-
