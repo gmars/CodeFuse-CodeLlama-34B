@@ -1,8 +1,10 @@
 ---
 license: other
+tasks: 
+- code-generation
 ---
 # Model Card for CodeFuse-CodeLlama-34B
-![Creation Approach](LOGO.png)
+![logo](LOGO.png)
 
 [[中文]](#chinese)    [[English]](#english)
 
@@ -99,16 +101,18 @@ gen_text = tokenizer.batch_decode(outputs[:, inputs["input_ids"].shape[1]:], ski
 print(gen_text)
 ```
 
+## MD5
+We notice that the file may be corrupted during transfer process. Please check MD5 value before use.
 
-
-
-
-
-
-
-
-
-
+| Model File                       | MD5 Value                        |
+|:---------------------------------|:--------------------------------:|
+| pytorch_model-00001-of-00007.bin | 8d544b1bcb3449934184d4141137329c |
+| pytorch_model-00002-of-00007.bin | 9d5dbb30911e48a42fb6d0fcabb322a4 |
+| pytorch_model-00003-of-00007.bin | b0d4aecee0457d9332005a187e1fffed |
+| pytorch_model-00004-of-00007.bin | 5c7e002de5eab77d0194a2b0f6de0c24 |
+| pytorch_model-00005-of-00007.bin | d22a511aa26b5b17117b665a877490ab |
+| pytorch_model-00006-of-00007.bin | a5c28ac277fac07d16dd66537e54d109 |
+| pytorch_model-00007-of-00007.bin | a967e2c6195477b7407089c0bffa2d53 |
 
 
 <a id="chinese"></a>
@@ -193,3 +197,17 @@ outputs = model.generate(
 gen_text = tokenizer.batch_decode(outputs[:, inputs["input_ids"].shape[1]:], skip_special_tokens=True)
 print(gen_text)
 ```
+
+
+## MD5
+我们发现模型文件可能会在传输过程中损坏，使用前请检查文件MD5值。
+
+| 模型文件                           | MD5值                            |
+|:---------------------------------|:--------------------------------:|
+| pytorch_model-00001-of-00007.bin | 8d544b1bcb3449934184d4141137329c |
+| pytorch_model-00002-of-00007.bin | 9d5dbb30911e48a42fb6d0fcabb322a4 |
+| pytorch_model-00003-of-00007.bin | b0d4aecee0457d9332005a187e1fffed |
+| pytorch_model-00004-of-00007.bin | 5c7e002de5eab77d0194a2b0f6de0c24 |
+| pytorch_model-00005-of-00007.bin | d22a511aa26b5b17117b665a877490ab |
+| pytorch_model-00006-of-00007.bin | a5c28ac277fac07d16dd66537e54d109 |
+| pytorch_model-00007-of-00007.bin | a967e2c6195477b7407089c0bffa2d53 |
