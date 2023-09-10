@@ -26,11 +26,19 @@ The context length of finetuning is 4K while it is able to be finetuned by 16k c
 
 ## Performance
 
-| Model                         | HumanEval(pass@1) |
-| :---------------------------- | :---------------: |
-| CodeLlama-34b                 |   48.8%(greedy decoding)   |
-| CodeLlama-34b-Python          |   53.7%(greedy decoding)   |
-| **CodeFuse-CodeLlama-34B** | **74.4%**(greedy decoding) |
+
+| Model                       | HumanEval(pass@1) |  Date   |
+|:----------------------------|:-----------------:|:-------:|
+| **CodeFuse-CodeLlama-34B**  |     **74.4%**      | 2023.9  |
+| WizardCoder-Python-34B-V1.0 |       73.2%       | 2023.8  |
+| GPT-4(zero-shot)            |       67.0%       | 2023.3  |
+| PanGu-Coder2 15B            |       61.6%       | 2023.8  |
+| CodeLlama-34b-Python        |       53.7%       | 2023.8  |
+| CodeLlama-34b               |       48.8%       | 2023.8  |
+| GPT-3.5(zero-shot)          |       48.1%       | 2022.11 |
+| OctoCoder                   |       46.2%       | 2023.8  |
+| StarCoder-15B               |       33.6%       | 2023.5  |
+| LLaMA 2 70B(zero-shot)      |       29.9%       | 2023.7  |
 
 <br>
 
@@ -130,11 +138,19 @@ CodeFuse-CodeLlama34B-MFT 是一个通过QLoRA对基座模型CodeLlama-34b-Pytho
 
 ## 评测表现(代码)
 
-| 模型                         | HumanEval(pass@1) |
-| :---------------------------- | :---------------: |
-| CodeLlama-34b                 |   48.8%(greedy decoding)   |
-| CodeLlama-34b-Python          |   53.7%(greedy decoding)   |
-| **CodeFuse-CodeLlama-34B** | **74.4%**(greedy decoding) |
+| 模型                          | HumanEval(pass@1) |   日期    |
+|:----------------------------|:-----------------:|:-------:|
+| **CodeFuse-CodeLlama-34B**  |     **74.4%**      | 2023.9  |
+| WizardCoder-Python-34B-V1.0 |       73.2%       | 2023.8  |
+| GPT-4(zero-shot)            |       67.0%       | 2023.3  |
+| PanGu-Coder2 15B            |       61.6%       | 2023.8  |
+| CodeLlama-34b-Python        |       53.7%       | 2023.8  |
+| CodeLlama-34b               |       48.8%       | 2023.8  |
+| GPT-3.5(zero-shot)          |       48.1%       | 2022.11 |
+| OctoCoder                   |       46.2%       | 2023.8  |
+| StarCoder-15B               |       33.6%       | 2023.5  |
+| LLaMA 2 70B(zero-shot)      |       29.9%       | 2023.7  |
+
 <br>
 
 ## Requirements
